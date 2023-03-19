@@ -344,15 +344,17 @@ h1{
 }
 
 .customers-item{
+  display: block;
   cursor: pointer;
 }
 
-.customers-item:hover>div,
-.customers-item:focus>div{
+.customers-item:hover,
+.customers-item:focus{
   border-color: var(--color-ocean);
 }
-.customers-item:hover>div>a>svg,
-.customers-item:focus>div>a>svg{
+
+.customers-item:hover>svg,
+.customers-item:focus>svg{
  fill: var(--color-ocean);
 }
 
@@ -423,6 +425,10 @@ h1{
 
 .social-item-link{
   display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-item{
@@ -490,7 +496,6 @@ h1{
   padding: 12px 24px;
   border-radius: 4px;
   border: 1px solid #E7E9FC;
-
 }
 
 .prtf-button-item:hover,
@@ -530,7 +535,7 @@ h1{
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.project-card>img{
+.project-card>li>img{
  margin-bottom: -5px;
 }
 
